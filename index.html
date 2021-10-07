@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <title>Pierre-papier-ciseaux</title>
+    <script src="javascript.js"></script>
+</head>
+
+<body class="">
+    <div class="row m-5 container-fluid ">
+
+        <div class="col-3"></div>
+
+        <div class="col-2">
+
+            <div class="card    ">
+                <div>
+                    <h1 class=" text-center"><span id="Score_robot">  </span> points</h1>
+                </div>
+
+                <img id="signe_ordinateur" src="ordi.png" alt="..." width="">
+                <div class="card-body ">
+                    <h5 class="card-title fs-5 text-center ">Ordinateur</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="card  ">
+                <h1 class=" text-center"><span id="Score_Match"></span> Match</h1>
+                <img src="vs.png" alt="..." width="">
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-5 text-center ">Contre</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <button onclick="reset()" type="button" class="btn btn-primary btn-lg m-lg-5 ">RESET</button>
+
+        </div>
+        <div class="col-2">
+            <div class="card ">
+                <h1><span id="Score_user"></span> points</h1>
+                <img id="signe_user" src="per.jpg" alt="..." width="">
+                <div class="card-body">
+                    <h5 class="card-title fs-5 text-center ">Utilisateur</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row m-5">
+        <div class="col-3"></div>
+
+        <div class="col-2">
+            <div onclick="signe_user('Pierre')" class="card ">
+                <img src="pierre.png" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fs-6 text-center ">Pierre</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div onclick="signe_user('Feuille')" class="card  ">
+                <img src="main.png" class="card-img-top" alt="..." width="350em">
+                <div class="card-body">
+                    <h5 class="card-title fs-6 text-center ">Feuille</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div onclick="signe_user('Ciseaux')" class="card  ">
+                <img src="ciseaux.png" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title fs-6 text-center ">Ciseaux</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</body>
+
+</html>

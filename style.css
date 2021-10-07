@@ -1,0 +1,13 @@
+.lol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: darkturquoise;
+}
+
+img {
+    width: 3em;
+}
